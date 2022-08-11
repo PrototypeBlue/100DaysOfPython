@@ -1,0 +1,10 @@
+print("Bienvendio a la calculadora de propinas")
+total = float(input("¿Cuál es el total? $  "))
+porcentaje = int(input("¿Porcentaje de propina? "))
+personar = int(input ("Cantidad de personar a pagar: "))
+
+total_propina = ((porcentaje * round(total, 1)) / 100)
+#print(total_propina)
+var= round((total_propina+total)/personar, 2)
+montofinal = "{:.2f}".format(var)
+print (f"Cada persona debe pagar: ${montofinal}")
